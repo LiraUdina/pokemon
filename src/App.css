@@ -1,0 +1,32 @@
+:root {
+  --bs-success: #28a745; 
+  --bs-success-rgb: 40, 167, 69;
+}
+
+
+  .mb-4 {
+    margin-bottom: 2rem !important; 
+  }
+
+  .row-cols-5 {
+    column-count: 1; 
+  }
+
+@media (min-width: 768px) {
+  .row-cols-5 {
+    column-count: 5;
+  }
+  :root {
+    --bs-success: #28a745; 
+    --bs-success-rgb: 40, 167, 69;
+  }
+  
+  
+    .mb-4 {
+      margin-bottom: 2rem !important; 
+    }
+  
+    .row-cols-5 {
+      column-count: 1; 
+    }
+}
