@@ -1,14 +1,14 @@
 {
   "name": "pokemon",
   "private": true,
-  "homepage": "https://LiraUdina.github.io/pokemon",
-  "version": "0.0.0",
+   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://LiraUdina.github.io/pokemon",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
