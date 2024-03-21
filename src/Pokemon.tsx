@@ -1,15 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import { Card } from 'react-bootstrap';
 
-interface PokemonProps {
-  pokemonUrl: string;
-}
-
-interface PokemonData {
+export interface PokemonData {
   name: string;
   sprites: {
     front_default: string;
   };
+}
+export interface Pokemon {
+  name: string;
+  url: string;
+}
+
+export interface PokemonProps {
+  pokemonUrl: string;
 }
 
 const Pokemon: React.FC<PokemonProps> = ({ pokemonUrl }) => {

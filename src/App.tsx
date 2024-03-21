@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import Pokemon from './Pokemon'; // Импорт компонента Pokemon
+import Pokemon, { Pokemon as PokemonType } from './Pokemon'; // Импорт интерфейса Pokemon
 
 const App: React.FC = () => {
-  const [pokemonList, setPokemonList] = useState<Pokemon[]>([]);
+  const [pokemonList, setPokemonList] = useState<PokemonType[]>([]);
 
   useEffect(() => {
     fetch("https://pokeapi.co/api/v2/pokemon/")
